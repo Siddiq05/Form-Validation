@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #141a34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container form {
+  width: 80%;
+  background-color: #ffff;
+  padding: 30px 10px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#icon {
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0px;
+  position: relative;
+}
+
+.input-group label {
+  flex-basis: 30%;
+  font-size: 17px;
+}
+.input-group input,
+.input-group textarea {
+  flex-basis: 68%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid;
+  height: 30px;
+  font-size: 14px;
+}
+.input-group textarea {
+  height: 80px;
+}
+.container form button {
+  width: 50%;
+  height: 35px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  background-color: #141a34;
+  font-size: 17px;
+  margin: 15px 0px;
+}
+.input-group span {
+  position: absolute;
+  right: 0px;
+  color: red;
+  bottom: -23px;
+  right: 10px;
+}
+.submit-error {
+  text-align: left;
+  width: 100%;
+  color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .container form {
+    width: 70%;
+  }
+  .input-group {
+    margin: 20px 0px;
+  }
+  .input-group label {
+    flex-basis: 25%;
+    font-size: 25px;
+  }
+  .input-group input,
+  .input-group textarea {
+    flex-basis: 70%;
+    height: 35px;
+    font-size: 23px;
+  }
+  .input-group textarea {
+    height: 100px;
+  }
+  .container form button {
+    width: 50%;
+    height: 50px;
+    font-size: 23px;
+  }
+  span {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container form {
+    width: 45%;
+  }
+  .input-group label {
+    flex-basis: 28%;
+  }
+  .input-group input,
+  .input-group textarea {
+    flex-basis: 66%;
+  }
+}
